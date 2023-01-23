@@ -24,7 +24,7 @@ public class Runner {
 
 //        3. Add "Islay" after "Jura" and before "Mull"
 
-        scottishIslands.add(scottishIslands.indexOf("Jura")+1, "Islay");
+        scottishIslands.add(scottishIslands.indexOf("Jura") + 1, "Islay");
 
 //        4. Print out the index position of "Skye"
 
@@ -54,7 +54,6 @@ public class Runner {
         }
 
 
-
         System.out.println(scottishIslands);
 
 //        NUMBERS
@@ -65,18 +64,52 @@ public class Runner {
 
 //        1. Print out a list of the even integers
 
-
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) % 2 == 0) {
+                System.out.print(numbers.get(i) + " ");
+            }
+        }
 
 //        2. Print the difference between the largest and smallest value
+        int max = 0;
 
+        System.out.println();
 
+        for (int i = 0; i < numbers.size(); i += 1) {
+            if (numbers.get(i) > max) {
+                max = numbers.get(i);
+            }
+        }
+        System.out.println(max);
+
+        int min = max;
+
+        for (int i = 0; i < numbers.size(); i += 1) {
+            if (numbers.get(i) < min) {
+                min = numbers.get(i);
+            }
+        }
+        System.out.println(min);
+
+        System.out.println((max - min));
 
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
 
-
+        for (int i = 0; i < numbers.size(); i += 1) {
+            if (numbers.get(i) == 1 && numbers.get(i + 1) == 1) {
+                System.out.println("True");
+            }
+        }
 
 //        4. Print the sum of the numbers,
 
+        int sum = 0;
+
+        for (int i = 0; i < numbers.size(); i += 1) {
+            if () {
+
+            }
+        }
 
 
 //        5. Print the sum of the numbers...
@@ -86,7 +119,7 @@ public class Runner {
 //          So [2, 7, 13, 2] would have sum of 9.
 
 
+        }
 
     }
 
-}
