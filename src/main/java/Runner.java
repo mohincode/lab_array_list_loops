@@ -103,20 +103,30 @@ public class Runner {
 
 //        4. Print the sum of the numbers,
 
-        int sum = 0;
+        int total = 0;
 
-        for (int i = 0; i < numbers.size(); i += 1) {
-            if () {
-
+        for (int i = 0; i < numbers.size(); i += 1) {  // for each of the numbers in the array
+            total += numbers.get(i);                     // do this function for each (add each number to the total)
             }
-        }
+        System.out.println(total);                       // print the total to be shown
 
 
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
-//
+
 //          So [2, 7, 13, 2] would have sum of 9.
+
+        int total2 = 0;
+
+        for (int i = 0; i < numbers.size(); i += 1) {
+            if (numbers.get(i) != 13) {   // if the current number is not 13
+                total2 += numbers.get(i); // add it to the total
+            } else {                      // otherwise (if it is 13)
+                break;                    // bun the program
+            }
+        }
+        System.out.println(total2);
 
 
         }
